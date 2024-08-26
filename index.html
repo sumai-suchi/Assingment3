@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assingment3</title>
+    <title>Assignment3</title>
+
+    <!-- google font link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+<!-- fontawsome cnd -->
+<script src="https://kit.fontawesome.com/991957f78c.js" crossorigin="anonymous"></script>
+<!-- DaisyUi and tailwind css cdn -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<style>
+    .manrope-font
+    {
+        font-family: "Manrope", sans-serif;
+    }
+</style>
+
+
+<!-- tailwind css -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-background': '#ABEF5F',
+            'btn-light-background':'rgba(171, 239, 95, 0.5)'
+
+          }
+        }
+      }
+    }
+  </script>
+
+
 </head>
-<body>
+<body class="manrope-font py-12">
+   <header class="w-full lg:w-5/6  md:container mx-auto bg-white shadow-sm ">
+   <nav>
+    <div class="navbar ">
+        
+        <div class="navbar-start">
+            
+        <i class="fa-solid fa-arrow-right w-7 h-7 bg-btn-background rounded-full inline-flex text-black justify-center items-center -rotate-45 "></i>
+                
+         <a class="font-bold text-xl ml-2">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex mr-52">
+          <ul class="menu menu-horizontal px-1">
+            <li class="font-semibold"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:contents">
+          <i class="fa-solid fa-magnifying-glass h-8 w-12 rounded-full border-2 inline-flex
+          justify-center items-center text-gray-600 bg-white mr-2"></i> 
+          <i class="fa-solid fa-cart-shopping h-8 w-12 rounded-full border-2 inline-flex
+          justify-center items-center text-gray-600  bg-white mr-2"></i> 
+          <button class="btn bg-btn-background rounded-full font-extrabold ">Book Consult <i class="fa-solid fa-arrow-right w-8 h-8 bg-black  rounded-full inline-flex text-white justify-center items-center -rotate-45 "></i></button>
+        </div>
+        <div class="lg:hidden navbar-end  ">
+            <i class="fa-solid fa-bars h-8 w-12rounded-full border-2 inline-flex  justify-center items-center "></i>
+        </div>
+        
+      </div>
+   </nav>
+ 
+   
+
+    <div class="hero ">
+        <div class="hero-content flex-col">
+          <img
+            src="./assets/banner.png"
+            class="w-1/2 rounded-lg  " />
+          <div class="text-center">
+            <h1 class="text-7xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="py-6 text-gray-900 text-xl font-medium ">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="btn bg-btn-light-background rounded-full font-extrabold ">View Details <i class="fa-solid fa-arrow-right w-8 h-8 bg-btn-background  rounded-full inline-flex text-white justify-center items-center -rotate-45 "></i></button>
+          </div>
+        </div>
+      </div>
+
+ 
+   </header>
+
+   <body>
+
+      <section>
+     <!-- first div -->
+        <div>
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+                  <img
+                    src="./assets/Rectangle.png"
+                    class="w-3/4 rounded-lg shadow-2xl" />
+                 
+                   
+                  
+                  <div class="">
+
+                    <img src="./assets/Vector.png" class="mb-3" alt="">
+
+                    <button class="btn rounded-full font-extrabold ">
+                        <i class="fa-solid fa-arrow-right w-8 h-8  inline-flex justify-center items-center  "></i>Book Consult </button>
+
+
+                    <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
+                    <p class="py-6">
+                        The barn house captivates with its blend of rustic charm and 
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <div class="card  w-full bg-white flex flex-row justify-center items-center mb-5">
+                        
+                            <img
+                        src="./assets/commercial.png" class="size-1/6" />
+                        
+                        <div class="card-body mb-4">
+                          <h2 class="card-title font-bold">Commercial</h2>
+                          <p class="text-gray-500 font-semibold ">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                       
+                        
+                      </div>
+
+                      <div class="card  w-full bg-white flex flex-row justify-center items-center px-5">
+                        
+                        <img
+                    src="./assets/residential.png" class="size-1/6" />
+                    
+                    <div class="card-body mb-4">
+                      <h2 class="card-title font-bold">Residential</h2>
+                      <p class="text-gray-500 font-semibold ">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                   
+                    
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+       <!-- second div -->
+        <div></div>
+
+      </section>
+    
+   </body>
+
+   <footer></footer>
     
 </body>
 </html>
